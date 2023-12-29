@@ -15,4 +15,4 @@
 
 ### GitHub Pages
 
-* https://iruslanjafarov.github.io/marvel
+* https://iruslanjafarov.github.io/Marvel
