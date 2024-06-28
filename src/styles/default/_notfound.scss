@@ -1,0 +1,19 @@
+.notfound {
+    &-container {
+        text-align: center;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -40%);
+    }
+    &__image {
+        width: 800px;
+        height: 500px;
+        object-fit: contain;
+    }
+    .btn {
+        display: inline-block;
+        width: 120px;
+        margin-top: 15px;
+    }
+}

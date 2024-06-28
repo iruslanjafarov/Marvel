@@ -1,0 +1,67 @@
+.content {
+    &-container {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__image {
+        width: 293px;
+        height: 450px;
+        object-fit: cover;
+    }
+    &-information {
+        margin-right: 50px;
+        &__title {
+            font-size: 22px;
+            font-weight: bold;
+        }
+        &__description {
+            width: 550px;
+            font-size: 18px;
+            margin-top: 25px;
+            line-height: 24px;
+            font-weight: normal;
+        }
+        &__pages {
+            font-size: 18px;
+            margin-top: 25px;
+        }
+        &__language {
+            font-size: 18px;
+            margin-top: 25px;
+        }
+        &__price {
+            font-weight: bold;
+            font-size: 24px;
+            color: red;
+            margin-top: 25px;
+        }
+    }
+    &__back {
+        font-weight: bold;
+        font-size: 18px;
+        a {
+            text-decoration: none;
+            color: inherit;
+            &:hover {
+                color: red;
+            }
+        }
+    }
+    .spinner {
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        top: 45.5%;
+        left: 48.5%;
+        transform: translate(-50%, -50%);
+    }
+    .error {
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        top: 40%;
+        left: 45%;
+        transform: translate(-50%, -50%);
+    }
+}

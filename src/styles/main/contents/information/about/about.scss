@@ -1,0 +1,113 @@
+.about {
+    padding: 25px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+    position: relative;
+    min-height: 150px;
+    &__image {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+    }
+    &-top {
+        display: flex;
+    }
+    &__name {
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 29px;
+    }
+    &-wrapper {
+        margin-left: 25px;
+        &-btns {
+            margin-top: 40px;
+            .btn {
+                &:last-child {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+    &__description {
+        margin: 15px 0px 0px 0px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    &-comics {
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 10px;
+        }
+        &__title {
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 24px;
+            margin: 10px 0px 0px 0px;
+        }
+        &__item {
+            padding: 0px 10px;
+            line-height: 25px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            margin-top: 10px;
+        }
+    }
+    &-select {
+        &__title {
+            margin: 15px 0px 0px 0px;
+            font-size: 18px;
+            line-height: 24px;
+            text-align: center;
+        }
+    }
+    &-current {
+        margin-top: 30px;
+        &__header {
+            display: flex;
+            align-items: center;
+        }
+        &__avatar {
+            width: 40px;
+            height: 40px;
+            background-color: #C4C4C4;
+            border-radius: 100%;
+            flex: 0 0 auto;
+        }
+        &__mini {
+            width: 100%;
+            height: 16px;
+            background-color: #C4C4C4;
+            margin-left: 15px;
+        }
+        &__block {
+            height: 35px;
+            width: 100%;
+            background-color: #C4C4C4;
+            margin-top: 15px;
+        }
+    }
+    .spinner {
+        box-shadow: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        &-circle {
+            position: absolute;
+            top: 35%;
+            left: 44%;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            border-top: 4px solid red;
+            border-right: 4px solid transparent;
+            animation: circle 1s linear infinite;
+        }
+    }
+    .error {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: none;
+    }
+}

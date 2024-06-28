@@ -1,0 +1,17 @@
+@use "./characters/characters.scss";
+@use "./information/information.scss";
+
+.contents {
+    &-container {
+        display: grid;
+        grid-template-columns: 650px 415px;
+        margin: 50px auto 50px auto;
+        column-gap: 25px;
+        align-items: start;
+        .error {
+            width: auto;
+            height: auto;
+            box-shadow: none;
+        }  
+    }
+}

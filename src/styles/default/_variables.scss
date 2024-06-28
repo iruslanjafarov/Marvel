@@ -1,0 +1,93 @@
+body {
+    font-family: "Roboto Condensed", sans-serif;
+}
+noscript {
+    color: red;
+}
+.container {
+    max-width: 1090px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 10px;
+}
+.active {
+    color: red !important;
+}
+.btn {
+    min-width: 101px;
+    padding: 10px 0px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 365ms ease 0s;
+    color: white;
+    a {
+        color: white;
+        text-decoration: none;
+        cursor: inherit;
+    }
+    &_primary {
+        background-color: red;
+    }
+    &_secondary {
+        background-color: #5C5C5C;
+    }
+    &:hover {
+        transform: translateY(-4px);
+    }
+}
+.pulse {
+    animation: pulse 1.5s ease-in-out 0.5s infinite;
+}
+.spinner {
+    width: 545px;
+    height: 260px;
+    position: relative;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
+    &__circle {
+        position: absolute;
+        top: 35%;
+        left: 44%;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        border-top: 4px solid red;
+        border-right: 4px solid transparent;
+        animation: circle 1s linear infinite;
+    }
+}
+.error {
+    width: 545px;
+    height: 260px;
+    position: relative;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
+    &__image {
+        display: block;
+        width: 250px;
+        height: 250px;
+        object-fit: contain;
+        margin: 0 auto;
+    }
+}
+.selected {
+    transform: translateY(-8px);
+    box-shadow: 0 5px 20px #9F0013;
+    transition: all 200ms ease 0s;
+}
+@keyframes circle {
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes pulse {
+    0% {
+        opacity: 1
+    }
+    50% {
+        opacity: .4
+    }
+    100% {
+        opacity: 1
+    }
+}
