@@ -12,3 +12,13 @@
 * REST API
 * Vite
 * React Router
+
+### How install?
+
+```
+yarn
+  ```
+
+```
+yarn run dev
+  ```
